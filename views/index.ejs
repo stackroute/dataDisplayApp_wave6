@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Display App</title>
+
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body ng-app='dataApp'>
+	<h2>Press the corresponding button to view the data</h2>
+
+	<div>
+		<a href='#/data/data1' class="lnButton">Data 1</a>
+		<a href='#/data/data2' class="lnButton">Data 2</a>
+		<a href='#/data/data3' class="lnButton">Data 3</a>
+		<a href='#/data/data4' class="lnButton">Data 4</a>
+	</div>
+	<hr />
+	<div ng-view></div>
+
+</body>
+
+<script src="/angular/angular.min.js" charset="utf-8"></script>
+<script src="/angular-route/angular-route.min.js" charset="utf-8"></script>
+<script src="/angular-bootstrap/ui-bootstrap-tpls.min.js" charset="utf-8"></script>
+
+<!-- Now include my angular app module & controller -->
+<script src="/js/dataApp.js" charset="utf-8"></script>
+
+</html>

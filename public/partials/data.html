@@ -1,0 +1,16 @@
+<div>
+	<div class='row' >
+		<div class='col-sm-12 col-md-12'>
+			<div ng-repeat="dataSeries in data">
+				<h3> {{dataSeries['Series Name']}} </h3>
+				<table>
+					<tr ng-repeat="(key, value) in dataSeries['Series Data']">
+						<td>{{key}}</td>
+						<td>{{value}}</td>
+					</tr>
+				</table>
+				<hr/>
+			</div>
+		</div>
+	</div>
+</div>
